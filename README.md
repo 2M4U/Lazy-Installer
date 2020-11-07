@@ -1,24 +1,40 @@
 Lazy Installer
 =====
+
 > A simple NPM package for the typical *lazy* developer.
 
-> This package is to basically install NPM packages detected in the `unhandledRejection` section of a process
-
-<kbd>[![V](https://img.shields.io/npm/v/lazyinstaller?label=NPM&logo=npm&style=plastic)](/)
-[![SV](https://img.shields.io/snyk/vulnerabilities/npm/lazyinstaller?label=Security%20Vulnerablities&logo=snyk&style=plastic)](/)
-[![SR](https://img.shields.io/librariesio/sourcerank/npm/lazyinstaller?label=Source%20Rank&style=plastic)](/)</kbd>
-
+> This package is to basically install NPM packages detected in the `unhandledRejection` section of a process.
 
 ##### How To Use
+
+> Process Execution
 ``` js
-let lazyinstaller = require("lazyinstaller");
+let lazy = require("lazyinstaller");
 process.on('unhandledRejection', error => {
-    lazyinstaller.npm(error)
+    lazy.processInstall(error)
 });
 ```
 
+> CLI (Command Line Interface)
+
+``` js
+let yargs = require("yargs");
+let lazy = require("lazyinstaller");
+let options = yargs
+    .usage("Usage: -pkg <package_name>")
+    .option("pkg", {
+        alias: "package",
+        describe: "Package Name",
+        type: "string",
+        demandOption: true
+    }).argv;
+
+    lazy.npmInstall(options.pkg);
+```
+
 ##### Example Unhandled Rejection:
-```yaml
+
+``` yaml
 Error: Cannot find module 'hastebin-gen'
 Require stack:
 
@@ -50,14 +66,18 @@ Require stack:
 ```
 
 ##### Code of Conduct
+
 > You can find the Code of Conduct [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/CODE_OF_CONDUCT.md)
 
 ##### Bug Reporting
+
 > You can find our Bug Report template [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
 
 ##### New Feature Requests
+
 > You can find our Feature Request template [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
 
 ##### Contributors
-> Looking for contributors to improve this package further;
+
+> Looking for contributors to improve this package further; 
 > Simple fork this repo and improve then do a pull request. 
