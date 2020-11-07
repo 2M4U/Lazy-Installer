@@ -1,6 +1,7 @@
 Lazy Installer
 =====
 A simple NPM package for the typical *lazy* developer.
+
 This package is to basically install NPM packages detected in the `unhandledRejection` section of a process
 
 Example:
@@ -49,4 +50,5 @@ process.on('unhandledRejection', error => {
 
 Contributors
 =====
-Looking for contributors to improve this package further
+Looking for contributors to improve this package further;
+Simple fork this repo and improve then do a pull request. 
