@@ -1,12 +1,10 @@
 Lazy Installer
 =====
-A simple NPM package for the typical *lazy* developer.
+> A simple NPM package for the typical *lazy* developer.
 
-This package is to basically install NPM packages detected in the `unhandledRejection` section of a process
+> This package is to basically install NPM packages detected in the `unhandledRejection` section of a process
 
-How To Use
-=====
-
+##### How To Use
 ``` js
 let lazyinstaller = require("lazyinstaller");
 process.on('unhandledRejection', error => {
@@ -14,9 +12,7 @@ process.on('unhandledRejection', error => {
 });
 ```
 
-Example Unhandled Rejection:
-=====
-
+##### Example Unhandled Rejection:
 ```yaml
 Error: Cannot find module 'hastebin-gen'
 Require stack:
@@ -48,18 +44,15 @@ Require stack:
 }
 ```
 
-Code of Conduct
-=====
-You can find the Code of Conduct [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/CODE_OF_CONDUCT.md)
+##### Code of Conduct
+> You can find the Code of Conduct [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/CODE_OF_CONDUCT.md)
 
-Bug Reporting
-=====
-You can find our Bug Report template [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
+##### Bug Reporting
+> You can find our Bug Report template [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
 
-New Feature Requests
-===== 
-You can find our Feature Request template [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
-Contributors
-=====
-Looking for contributors to improve this package further;
-Simple fork this repo and improve then do a pull request. 
+##### New Feature Requests
+> You can find our Feature Request template [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
+
+##### Contributors
+> Looking for contributors to improve this package further;
+> Simple fork this repo and improve then do a pull request. 
