@@ -4,6 +4,10 @@ Lazy Installer
 
 > This package is to basically install NPM packages detected in the `unhandledRejection` section of a process
 
+<kbd>[![V](https://img.shields.io/npm/v/lazyinstaller?label=NPM&logo=npm&style=plastic)](/)
+[![SV](https://img.shields.io/snyk/vulnerabilities/npm/lazyinstaller?label=Security%20Vulnerablities&logo=snyk&style=plastic)](/)</kbd>
+
+
 ##### How To Use
 ``` js
 let lazyinstaller = require("lazyinstaller");
