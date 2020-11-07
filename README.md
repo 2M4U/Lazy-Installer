@@ -48,6 +48,17 @@ Require stack:
 }
 ```
 
+Code of Conduct
+=====
+You can find the Code of Conduct [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/CODE_OF_CONDUCT.md)
+
+Bug Reporting
+=====
+You can find our Bug Report template [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
+
+New Feature Requests
+===== 
+You can find our Feature Request template [here](https://github.com/CyberCDN/Lazy-Installer/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
 Contributors
 =====
 Looking for contributors to improve this package further;
