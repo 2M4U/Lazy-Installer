@@ -4,7 +4,17 @@ A simple NPM package for the typical *lazy* developer.
 
 This package is to basically install NPM packages detected in the `unhandledRejection` section of a process
 
-Example:
+How To Use
+=====
+
+``` js
+let lazyinstaller = require("lazyinstaller");
+process.on('unhandledRejection', error => {
+    lazyinstaller.npm(error)
+});
+```
+
+Example Unhandled Rejection:
 =====
 
 ```yaml
@@ -36,16 +46,6 @@ Require stack:
     'E:\\New Project - 2020\\Template v12\\index.js'
   ]
 }
-```
-
-How To Use
-=====
-
-``` js
-let lazyinstaller = require("lazyinstaller");
-process.on('unhandledRejection', error => {
-    lazyinstaller.npm(error)
-});
 ```
 
 Contributors
