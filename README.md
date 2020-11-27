@@ -1,3 +1,5 @@
+# PROJECT NOW DEPRECATED
+
 Lazy Installer
 =====
 > A simple NPM package for the typical *lazy* developer.
